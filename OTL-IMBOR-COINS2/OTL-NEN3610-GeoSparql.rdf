@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:OTL-NEN3610="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#"
+    xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610-GeoSparql.rdf#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610-GeoSparql.rdf">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf"/>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.opengis.net/ont/geosparql#gmlLiteral">
+    <rdfs:label>gml literal</rdfs:label>
+  </rdfs:Datatype>
+  <owl:Class rdf:ID="NEN3610GML">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </rdfs:subClassOf>
+    <rdfs:label>NEN3610GML</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#SimpleProperty"/>
+    <rdfs:label>Geometry</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#Object"/>
+    <rdfs:label>Feature</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#asGML">
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#gmlLiteral"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+    <rdfs:label>asGML</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+    <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    <rdfs:label>has geometry</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NEN3610Object">
+    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="#NEN3610GML"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
