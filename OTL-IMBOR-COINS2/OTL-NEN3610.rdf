@@ -8,229 +8,302 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf">
   <owl:Ontology rdf:about="">
-    <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
     <owl:imports rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf"/>
+    <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
   </owl:Ontology>
-  <owl:Class rdf:ID="MaterieleLevensduur">
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="NEN3610Object"/>
-    </rdfs:subClassOf>
-    <rdfs:label>Materiele levensduur</rdfs:label>
+  <owl:Class rdf:ID="HeeftNEN3610ID">
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#ComplexProperty"/>
+    <rdfs:label>heeft NEN3610ID</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="NEN3610ID"/>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#objectValue"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MaterieleLevensduur">
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="heeftBeginTijd"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
       </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Materiele levensduur</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="NEN3610Object"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="ObjectBeginTijd">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
     <rdfs:label>Object begin tijd</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
   </owl:Class>
   <owl:Class rdf:ID="GeografischGebied">
+    <rdfs:label>Geografisch gebied</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="GeoObject"/>
     </rdfs:subClassOf>
-    <rdfs:label>Geografisch gebied</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="EindTijd">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
     <rdfs:label>Eind tijd</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
   </owl:Class>
   <owl:Class rdf:ID="FormeleHistorie">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#NEN3610Object"/>
-    </rdfs:subClassOf>
-    <rdfs:label>Formele historie</rdfs:label>
-    <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="heeftTijdstipRegistratie"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Formele historie</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#NEN3610Object"/>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="Identifier">
-    <rdfs:label>Identifier</rdfs:label>
+  <owl:Class rdf:ID="Namespace">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#NEN3610ID"/>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#propertyBelongsTo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Namespace</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#StringProperty"/>
   </owl:Class>
   <owl:Class rdf:about="#NEN3610Object">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#CataloguePart"/>
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#Object"/>
-    <rdfs:label>NEN3610Object</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="heeftIdentifier"/>
-        </owl:onProperty>
+        <owl:onClass rdf:resource="#HeeftNEN3610ID"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>NEN3610Object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#CataloguePart"/>
   </owl:Class>
   <owl:Class rdf:ID="Gebouw">
+    <rdfs:label>Gebouw</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeoObject"/>
     </rdfs:subClassOf>
-    <rdfs:label>Gebouw</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="Terrein">
+    <rdfs:label>Terrein</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#GeoObject"/>
     </rdfs:subClassOf>
-    <rdfs:label>Terrein</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#GeoObject">
-    <rdfs:label>Geo-Object</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
-  </owl:Class>
-  <owl:Class rdf:ID="EindRegistratie">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Eind registratie</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="Water">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:label>Water</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="EindGeldigheid">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Eind geldigheid</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="Weg">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/concepten/nen3610/doc/begrip/Weg"/>
-    <rdfs:label>Weg</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="PlanologischGebied">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:label>Planologisch gebied</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="ObjectEindTijd">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Object eind tijd</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="InrichtingsElement">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:label>Inrichtings element</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="BeginGeldigheid">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Begin geldigheid</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="Spoorbaan">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:label>Spoorbaan</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="FunctioneelGebied">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
-    <rdfs:label>Functioneel gebied</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="TijdstipRegistratie">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Tijdstip registratie</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="BeginTijd">
-    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
-    <rdfs:label>Begin tijd</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="MaterieleHistorie">
-    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
-    <rdfs:label>Materiele historie</rdfs:label>
+  <owl:Class rdf:ID="Versie">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
-        <owl:onProperty>
-          <owl:FunctionalProperty rdf:ID="heeftBeginGeldigheid"/>
-        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#NEN3610ID"/>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#propertyBelongsTo"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Versie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#StringProperty"/>
   </owl:Class>
-  <owl:Class rdf:ID="FormeleLevensduur">
+  <owl:Class rdf:about="#GeoObject">
+    <rdfs:seeAlso rdf:resource="http://definities.geostandaarden.nl/concepten/nen3610/id/begrip/GeoObject"/>
     <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
-    <rdfs:label>Formele levensduur</rdfs:label>
+    <rdfs:label>Geo-Object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Water">
+    <rdfs:label>Water</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EindRegistratie">
+    <rdfs:label>Eind registratie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EindGeldigheid">
+    <rdfs:label>Eind geldigheid</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Weg">
+    <rdfs:label>Weg</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/concepten/nen3610/doc/begrip/Weg"/>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanologischGebied">
+    <rdfs:label>Planologisch gebied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ObjectEindTijd">
+    <rdfs:label>Object eind tijd</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InrichtingsElement">
+    <rdfs:label>Inrichtings element</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BeginGeldigheid">
+    <rdfs:label>Begin geldigheid</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NEN3610ID">
+    <rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/nen3610/doc/begrip/LokaalId"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onClass rdf:resource="#Versie"/>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxQualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="#Namespace"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass>
+          <owl:Class rdf:ID="LokaalID"/>
+        </owl:onClass>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>NEN3610ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#ComplexPropertyValue"/>
+  </owl:Class>
+  <owl:Class rdf:about="#LokaalID">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#NEN3610ID"/>
+        <owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#propertyBelongsTo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Lokaal ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#StringProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Spoorbaan">
+    <rdfs:label>Spoorbaan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FunctioneelGebied">
+    <rdfs:label>Functioneel gebied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TijdstipRegistratie">
+    <rdfs:label>Tijdstip registratie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BeginTijd">
+    <rdfs:label>Begin tijd</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DateTimeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MaterieleHistorie">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="heeftBeginGeldigheid"/>
+        </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
         >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Materiele historie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FormeleLevensduur">
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="heeftObjectBeginTijd"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Formele levensduur</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
   </owl:Class>
   <owl:Class rdf:ID="RegistratiefGebied">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
     <rdfs:label>Registratief gebied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
   </owl:Class>
   <owl:Class rdf:ID="Kunstwerk">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
     <rdfs:label>Kunstwerk</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
   </owl:Class>
   <owl:Class rdf:ID="Leiding">
-    <rdfs:subClassOf rdf:resource="#GeoObject"/>
     <rdfs:label>Leiding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="#heeftIdentifier">
-    <rdfs:domain rdf:resource="#NEN3610Object"/>
+  <owl:ObjectProperty rdf:about="#heeftBeginGeldigheid">
+    <rdfs:domain rdf:resource="#MaterieleHistorie"/>
+    <rdfs:range rdf:resource="#BeginGeldigheid"/>
     <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:label>heeft begin geldigheid</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="heeftIdentifier">
+    <rdfs:range rdf:resource="#NEN3610ID"/>
     <rdfs:label>heeft identifier</rdfs:label>
-    <rdfs:range rdf:resource="#Identifier"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:domain rdf:resource="#NEN3610Object"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#heeftBeginTijd">
-    <rdfs:label>heeft begin tijd</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:range rdf:resource="#BeginTijd"/>
     <rdfs:domain rdf:resource="#MaterieleLevensduur"/>
+    <rdfs:range rdf:resource="#BeginTijd"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:label>heeft begin tijd</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#heeftTijdstipRegistratie">
-    <rdfs:label>heeft tijdstip registratie</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:domain rdf:resource="#FormeleHistorie"/>
     <rdfs:range rdf:resource="#TijdstipRegistratie"/>
+    <rdfs:domain rdf:resource="#FormeleHistorie"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:label>heeft tijdstip registratie</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#heeftObjectBeginTijd">
-    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:label>heeft object begin tijd</rdfs:label>
     <rdfs:range rdf:resource="#ObjectBeginTijd"/>
+    <rdfs:label>heeft object begin tijd</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="heeftEindGeldigheid">
-    <rdfs:range rdf:resource="#EindGeldigheid"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:label>heeft eind geldigheid</rdfs:label>
     <rdfs:domain rdf:resource="#MaterieleHistorie"/>
+    <rdfs:label>heeft eind geldigheid</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:range rdf:resource="#EindGeldigheid"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="heeftObjectEindTijd">
-    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:label>heeft object eind tijd</rdfs:label>
     <rdfs:range rdf:resource="#EindTijd"/>
+    <rdfs:label>heeft object eind tijd</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="heeftEindTijd">
-    <rdfs:range rdf:resource="#EindTijd"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:label>heeft eind tijd</rdfs:label>
     <rdfs:domain rdf:resource="#MaterieleLevensduur"/>
+    <rdfs:label>heeft eind tijd</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
+    <rdfs:range rdf:resource="#EindTijd"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="heeftEindRegistratie">
-    <rdfs:label>heeft eind registratie</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:domain rdf:resource="#FormeleHistorie"/>
     <rdfs:range rdf:resource="#EindRegistratie"/>
-  </owl:ObjectProperty>
-  <owl:FunctionalProperty rdf:about="#heeftBeginGeldigheid">
-    <rdfs:label>heeft begin geldigheid</rdfs:label>
+    <rdfs:domain rdf:resource="#FormeleHistorie"/>
     <rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
-    <rdfs:range rdf:resource="#BeginGeldigheid"/>
-    <rdfs:domain rdf:resource="#MaterieleHistorie"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:FunctionalProperty>
+    <rdfs:label>heeft eind registratie</rdfs:label>
+  </owl:ObjectProperty>
 </rdf:RDF>
 
 <!-- Created with TopBraid -->
