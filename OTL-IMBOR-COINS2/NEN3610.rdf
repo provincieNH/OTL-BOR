@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cbim-2.0="http://www.coinsweb.nl/cbim-2.0.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.buildingbits.nl/coins2/draft/NEN3610.rdf#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.buildingbits.nl/coins2/draft/NEN3610.rdf">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="MaterieleLevensduur">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="beginTijd"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="NEN3610Object"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Materiele levensduur</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FormeleLevensduur">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="objectBeginTijd"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Formele levensduur</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#NEN3610Object"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Weg">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="GeoObject"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Weg</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/concepten/nen3610/doc/begrip/Weg"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GeografischGebied">
+    <rdfs:label>Geografisch gebied</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#NEN3610Object">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="heeftNENID"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>NEN3610Object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="NEN3610ID">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="versie"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="namespace"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="lokaalID"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>NEN3610ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanologischGebied">
+    <rdfs:label>Planologisch gebied</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Terrein">
+    <rdfs:label>Terrein</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Leiding">
+    <rdfs:label>Leiding</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FunctioneelGebied">
+    <rdfs:label>Functioneel gebied</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MaterieleHistorie">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="beginGeldigheid"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Materiele historie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InrichtingsElement">
+    <rdfs:label>Inrichtings element</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#GeoObject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#GeoObject">
+    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
+    <rdfs:seeAlso rdf:resource="http://definities.geostandaarden.nl/concepten/nen3610/id/begrip/GeoObject"/>
+    <rdfs:label>Geo-Object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Kunstwerk">
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+    <rdfs:label>Kunstwerk</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FormeleHistorie">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="tijdstipRegistratie"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Formele historie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NEN3610Object"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Gebouw">
+    <rdfs:label>Gebouw</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RegistratiefGebied">
+    <rdfs:label>Registratief gebied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Spoorbaan">
+    <rdfs:label>Spoorbaan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water">
+    <rdfs:label>Water</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#GeoObject"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#heeftNENID">
+    <rdfs:range rdf:resource="#NEN3610ID"/>
+    <rdfs:domain rdf:resource="#NEN3610Object"/>
+    <rdfs:label>heeft NEN3610ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="#lokaalID">
+    <rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/nen3610/doc/begrip/LokaalId"/>
+    <rdfs:domain rdf:resource="#NEN3610ID"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>lokaal ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#objectBeginTijd">
+    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>object begin tijd</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#tijdstipRegistratie">
+    <rdfs:domain rdf:resource="#FormeleHistorie"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>tijdstip registratie</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="objectEindTijd">
+    <rdfs:domain rdf:resource="#FormeleLevensduur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>object eind tijd</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#namespace">
+    <rdfs:domain rdf:resource="#NEN3610ID"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>namespace</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="eindTijd">
+    <rdfs:domain rdf:resource="#MaterieleLevensduur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>eind tijd</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="eindRegistratie">
+    <rdfs:domain rdf:resource="#FormeleHistorie"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>eind registratie</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#beginTijd">
+    <rdfs:domain rdf:resource="#MaterieleLevensduur"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>begin tijd</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#beginGeldigheid">
+    <rdfs:domain rdf:resource="#MaterieleHistorie"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>begin geldigheid</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="eindGeldigheid">
+    <rdfs:domain rdf:resource="#MaterieleHistorie"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label>eind geldigheid</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#versie">
+    <rdfs:domain rdf:resource="#NEN3610ID"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>versie</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

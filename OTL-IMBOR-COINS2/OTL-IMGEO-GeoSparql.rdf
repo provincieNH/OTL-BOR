@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO-GeoSparql.rdf#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:coins="http://www.coinsweb.nl/cbim-2.0.rdf#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:ns1="http://www.buildingbits.nl/coins2/draft/OTL-IMKL.rdf"
+	xmlns:gis="http://www.opengis.net/ont/geosparql#"
+	xmlns:geo-ont="http://www.geonames.org/ontology#"
+	xmlns:nen3610="http://www.buildingbits.nl/coins2/draft/NEN3610.rdf#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:imgeo="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:imbor="http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#">
+<owl:Ontology rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO-GeoSparql.rdf"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b746"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b747"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b748"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b749"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b750"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b751"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b752"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b753"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b754"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b755"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b756"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b757"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b758"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b759"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b760"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b761"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b762"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b763"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b764"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b765"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b766"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b767"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b768"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b769"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b770"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b771"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b772"/>
+<owl:Restriction rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b773"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#IMGEOObject">
+	<rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Bak">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b759"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#BegroeidTerreindeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b750"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Bord">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b760"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Buurt">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b769"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#FunctioneelGebied">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b757"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Installatie">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b762"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kast">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b763"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Mast">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b764"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#OnbegroeidTerreindeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b749"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#OndersteunendWegdeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b747"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#OpenbareRuimte">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b770"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Overbruggingsdeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b754"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#OverigeScheiding">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b758"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Paal">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b765"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Put">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b766"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Sensor">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b767"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Spoor">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b748"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Straatmeubilair">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b768"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Tunneldeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b755"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Wegdeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b746"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Wijk">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b773"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Gebouwinstallatie">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b761"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Stadsdeel">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b771"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Waterschap">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b772"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Pand">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b753"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Bouwwerk">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b752"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#OngeclassificeerdObject">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b756"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Water">
+	<rdfs:subClassOf rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b751"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO-GeoSparql.rdf">
+	<owl:imports rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf"/>
+	<owl:imports rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-GeoSparql.rdf"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b746">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b747">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b748">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b749">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b750">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b751">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b752">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b753">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b754">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b755">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b756">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b757">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b758">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b759">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b760">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b761">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b762">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b763">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b764">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b765">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b766">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b767">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b768">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b769">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b770">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b771">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b772">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b773">
+	<owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b746">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b747">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b748">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Curve"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b749">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b750">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b751">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b752">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#MultiSurface"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b753">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b754">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b755">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b756">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b757">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b758">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b759">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b760">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b761">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b762">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b763">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b764">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b765">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b766">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b767">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b768">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b769">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b770">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b771">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b772">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b773">
+	<owl:onClass rdf:resource="http://www.opengis.net/ont/gml#Polygon"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b746">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b747">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b748">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b749">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b750">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b751">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b752">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b753">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b754">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b755">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b756">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b757">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b758">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b759">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b760">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b761">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b762">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b763">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b764">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b765">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b766">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b767">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b768">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b769">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b770">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b771">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b772">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-d6137b3fb1ae45a996f2af6f68026aca-b773">
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+</rdf:RDF>
