@@ -2,11 +2,11 @@
 <rdf:RDF
 	xmlns="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#"
 	xmlns:gis="http://www.opengis.net/ont/geosparql#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	xmlns:cbim-2.0="http://www.coinsweb.nl/cbim-2.0.rdf#"
-	xmlns:geo-ont="http://www.geonames.org/ontology#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:gn="http://www.geonames.org/ontology#"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
