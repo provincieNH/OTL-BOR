@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
 	xmlns="http://www.buildingbits.nl/coins2/draft/IMGEO-mapping.rdf#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:coins="http://www.coinsweb.nl/cbim-2.0.rdf#"
+	xmlns:gn="http://www.geonames.org/ontology#"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:ns1="http://www.buildingbits.nl/coins2/draft/OTL-IMKL.rdf"
 	xmlns:gis="http://www.opengis.net/ont/geosparql#"
-	xmlns:geo-ont="http://www.geonames.org/ontology#"
 	xmlns:nen3610="http://www.buildingbits.nl/coins2/draft/NEN3610.rdf#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	xmlns:imgeo="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#"
 	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
 	xmlns:imbor="http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#">
 <owl:Ontology rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO-mapping.rdf"/>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomenPlus">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomenPlus"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomen">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomen"/>
-</rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#TypePlus">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#TypePlus"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Type">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Type"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Functie">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Functie"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomenPlus">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomenPlus"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomen">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomen"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#FunctiePlus">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#FunctiePlus"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kruinlijn">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Kruinlijn"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Functie">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Functie"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#HoortBij">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#HoortBij"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomenPlus">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomenPlus"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#StatusPlus">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#StatusPlus"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomen">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomen"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Status">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Status"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kruinlijn">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Kruinlijn"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#TypePlus">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#TypePlus"/>
@@ -52,196 +50,273 @@
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Type">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Type"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Functie">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Functie"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomenPlus">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomenPlus"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Fysiek_voorkomen">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Fysiek_voorkomen"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#FunctiePlus">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#FunctiePlus"/>
 </rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Kruinlijn">
-	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kruinlijn"/>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Functie">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Functie"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#HoortBij">
 	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#HoortBij"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b25">
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#StatusPlus">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#StatusPlus"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Status">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Status"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#Kruinlijn">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kruinlijn"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b25">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#hectometeraanduiding"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b26">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b26">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b27">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b27">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#buurtcode"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b28">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b28">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b29">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b29">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#wijkcode"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b30">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b30">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b31">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b31">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#naam"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b32">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b32">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b33">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b33">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#overbruggingIsBeweegbaar"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b34">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b34">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b35">
-	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#status"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b36">
-	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b37">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b35">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#bronhouder"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b38">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b36">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b39">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b37">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#inOnderzoek"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b40">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b38">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b41">
-	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#relatieveHoogteligging"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b42">
-	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b43">
-	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#opTalud"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b44">
-	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
-</rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b45">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b39">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#lv-Publicatiedatum"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b46">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b40">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b47">
-	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#kruinlijn"/>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b41">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#relatieveHoogteligging"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b48">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b42">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b43">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#wegdeelOpTalud"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b44">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b45">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#begroeidTerreindeelOpTalud"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b46">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b47">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#ondersteunendWegdeelOpTalud"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b48">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b49">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#onbegroeidTerreindeelOpTalud"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b50">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#datatypeValue"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b51">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#kruinlijnBegroeidTerreindeel"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b52">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b49">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b53">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#kruinlijnOnbegroeidTerreindeel"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b54">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b55">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#kruinlijnOndersteunendWegdeel"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b56">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b57">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#kruinlijnWegdeel"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b58">
+	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b59">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#stadsdeel"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b50">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b60">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b51">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b61">
 	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-IMGEO.rdf#wijk"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b52">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b62">
 	<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b25">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b25">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b26">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b26">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b27">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b27">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b28">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b28">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b29">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b29">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b30">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b30">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b31">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b31">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b32">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b32">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b33">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b33">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b34">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b34">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b35">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b35">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b36">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b36">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b37">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b37">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b38">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b38">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b39">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b39">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b40">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b40">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b41">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b41">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b42">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b42">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b43">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b43">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b44">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b44">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b45">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b45">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b46">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b46">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b47">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b47">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b48">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b48">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b49">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b49">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b50">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b50">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
 </rdf:Description>
-<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b51">
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b51">
 	<rdf:rest>
-		<rdf:Description rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b52">
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b52">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b53">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b54">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b55">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b56">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b57">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b58">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b59">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b60">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b61">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b62">
 			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
 		</rdf:Description>
 	</rdf:rest>
@@ -252,46 +327,61 @@
 	<owl:imports rdf:resource="http://www.buildingbits.nl/coins2/draft/NEN3610-mapping.rdf"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hectometeraanduiding">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b25"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b25"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#buurtcode">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b27"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b27"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#wijkcode">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b29"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b29"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#naam">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b31"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b31"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#overbruggingIsBeweegbaar">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b33"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#wijk">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b51"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#stadsdeel">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b49"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#status">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b35"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b33"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#bronhouder">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b37"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b35"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#inOnderzoek">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b39"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#relatieveHoogteligging">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b41"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#opTalud">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b43"/>
-</rdf:Description>
-<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#kruinlijn">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b47"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b37"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#lv-Publicatiedatum">
-	<owl:propertyChainAxiom rdf:nodeID="genid-c2ac88bc56d24e53b04bc7ad805dcc80-b45"/>
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b39"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#relatieveHoogteligging">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b41"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#wegdeelOpTalud">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b43"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#begroeidTerreindeelOpTalud">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b45"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#ondersteunendWegdeelOpTalud">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b47"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#onbegroeidTerreindeelOpTalud">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b49"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#wijk">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b61"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#stadsdeel">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b59"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#kruinlijnWegdeel">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b57"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#kruinlijnOndersteunendWegdeel">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b55"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#kruinlijnOnbegroeidTerreindeel">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b53"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#kruinlijnBegroeidTerreindeel">
+	<owl:propertyChainAxiom rdf:nodeID="genid-31a8d24e21b741fea333cba3885efd58-b51"/>
 </rdf:Description>
 
 </rdf:RDF>
