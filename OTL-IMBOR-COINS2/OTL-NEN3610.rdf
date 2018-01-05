@@ -89,6 +89,9 @@
 <owl:Class rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#EindGeldigheid"/>
 <owl:Class rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#HeeftNENIDConnection"/>
 <owl:Restriction rdf:nodeID="node9"/>
+<owl:Class rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NENExpiredEntity"/>
+<owl:Restriction rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b25"/>
+<owl:Class rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b26"/>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#beginTijd">
 	<rdfs:subPropertyOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#hasProperties"/>
 </rdf:Description>
@@ -243,6 +246,13 @@
 	<rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#DirectedConnection"/>
 	<rdfs:subClassOf rdf:nodeID="node9"/>
 </rdf:Description>
+<rdf:Description rdf:about="http://www.coinsweb.nl/cbim-2.0.rdf#ExpiredEntity">
+	<rdfs:subClassOf rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#FormeleLevensduur"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NENExpiredEntity">
+	<rdfs:subClassOf rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#ExpiredEntity"/>
+	<rdfs:subClassOf rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b25"/>
+</rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#beginTijd">
 	<rdfs:domain rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#MaterieleLevensduur"/>
 </rdf:Description>
@@ -314,6 +324,9 @@
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#eindGeldigheid">
 	<rdfs:range rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#EindGeldigheid"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NENExpiredEntity">
+	<owl:equivalentClass rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b26"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#MaterieleLevensduur">
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materiele levensduur</rdfs:label>
@@ -447,6 +460,9 @@
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#HeeftNENIDConnection">
 	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heeft NEN3610ID</rdfs:label>
 </rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NENExpiredEntity">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NENExpiredEntity</rdfs:label>
+</rdf:Description>
 <rdf:Description rdf:nodeID="node1">
 	<owl:onProperty rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#beginTijd"/>
 </rdf:Description>
@@ -474,6 +490,9 @@
 <rdf:Description rdf:nodeID="node9">
 	<owl:onProperty rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#toObject"/>
 </rdf:Description>
+<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b25">
+	<owl:onProperty rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#objectEindTijd"/>
+</rdf:Description>
 <rdf:Description rdf:nodeID="node1">
 	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
 </rdf:Description>
@@ -495,6 +514,9 @@
 <rdf:Description rdf:nodeID="node8">
 	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
 </rdf:Description>
+<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b25">
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+</rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#Weg">
 	<rdfs:seeAlso rdf:resource="https://definities.geostandaarden.nl/concepten/nen3610/doc/begrip/Weg"/>
 </rdf:Description>
@@ -509,6 +531,23 @@
 </rdf:Description>
 <rdf:Description rdf:nodeID="node9">
 	<owl:allValuesFrom rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NEN3610ID"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b26">
+	<owl:intersectionOf>
+		<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b27">
+			<rdf:first rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf#ExpiredEntity"/>
+		</rdf:Description>
+	</owl:intersectionOf>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b28">
+	<rdf:first rdf:resource="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf#NEN3610"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b27">
+	<rdf:rest>
+		<rdf:Description rdf:nodeID="genid-59c24d2b3f8f42dfb46aedb94dce10e8-b28">
+			<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+		</rdf:Description>
+	</rdf:rest>
 </rdf:Description>
 <rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/OTL-NEN3610.rdf">
 	<owl:imports rdf:resource="http://www.coinsweb.nl/cbim-2.0.rdf"/>
