@@ -1,1 +1,465 @@
-IMGeo-2.1.1-CBNL-20180401.rdf
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://ont.cbnl.org/mapping/IMGeo-2.1.1-CBNL-20180401#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:gis="http://www.opengis.net/ont/geosparql#"
+	xmlns:nen3610="http://www.buildingbits.nl/coins2/draft/NEN3610.rdf#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:imgeo="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:imbor="http://www.buildingbits.nl/coins2/draft/IMBOR.rdf#">
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Bak">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bak"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Bord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Gemeente">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Gemeente"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Mast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Mast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Paal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Paal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Put">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Put"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Sensor">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Sensor"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Spoor">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Spoor"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Straatmeubilair">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Straatmeubilair"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Tunneldeel">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Tunneldeel"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Wijk">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Wijk"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_draadraster">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Draadraster"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_faunaraster">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Faunaraster"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_kademuur">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kademuur"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_geluidsscherm">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Geluidsscherm"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_damwand">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Damwand"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_muur">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Muur"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_hek">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Hek"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomenPlus_grind">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Grind"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_zand">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Zand"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomenPlus_sierbestrating">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Sierbestrating"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomenPlus_asfalt">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Asfalt"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomenPlus_zand">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Zand"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_onverhard">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Onverhard"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_erf">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Erf"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functiePlus_verkeersdrempel">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Verkeersdrempel"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functiePlus_verbindingsweg">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Verbindingsweg"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functiePlus_calamiteitendoorsteek">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Calamiteitendoorsteek"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_woonerf">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Woonerf"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_overweg">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Overweg"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_voetpad">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Voetpad"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_inrit">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Inrit"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_ruiterpad">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Ruiterpad"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_ov-baan">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/OvBaan"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_fietspad">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Fietspad"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_spoorbaan">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Spoorbaan"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_berm">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Berm"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_verkeerseiland">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Verkeerseiland"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_groenvoorziening">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Groenvoorziening"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_molgoot">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Molgoot"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_lijnafwatering">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Lijnafwatering"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_wegmarkering">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Wegmarkering"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_wildrooster">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Wildrooster"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_rooster">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Rooster"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_geleideconstructie">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Geleideconstructie"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_balustrade">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Balustrade"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_duin">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Duin"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_loofbos">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Loofbos"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_bouwland">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bouwland"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_fruitteelt">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Fruitteelt"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_kwelder">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kwelder"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_heide">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Heide"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_houtwal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Houtwal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_rietland">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Rietland"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_naaldbos">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Naaldbos"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_boomteelt">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Boomteelt"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#fysiek_voorkomen_struiken">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Struiken"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_afvalbak">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Afvalbak"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bloembak">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bloembak"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_container">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Container"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_lichtmast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Lichtmast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_portaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Portaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_verkeersbordpaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Verkeersbordpaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_haltepaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Haltepaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_praatpaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Praatpaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_dijkpaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Dijkpaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_drukknoppaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Drukknoppaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_pomp">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Pomp"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_zonnepaneel">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Zonnepaneel"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hoortBij_ecoduct">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Ecoduct"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hoortBij_viaduct">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Viaduct"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hoortBij_brug">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Brug"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hoortBij_fly-over">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/FlyOver"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#hoortBij_aquaduct">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Aquaduct"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_pijler">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Pijler"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_pyloon">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Pyloon"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_landhoofd">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Landhoofd"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_landbouw">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Landbouw"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_begraafplaats">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Begraafplaats"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bushalte">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bushalte"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_carpoolplaats">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Carpoolplaats"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_meerpaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Meerpaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bunker">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bunker"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_schuur">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Schuur"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_bassin">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bassin"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_windturbine">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Windturbine"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_opslagtank">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Opslagtank"/>
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Tank"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_overkapping">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Overkapping"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_Kademuur">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kademuur"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_overkluizing">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Overkluizing"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_duiker">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Duiker"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_faunavoorziening">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Faunavoorziening"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_vispassage">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Vispassage"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_coupure">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Coupure"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_ponton">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Ponton"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_sluis">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Sluis"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_hoogspanningsmast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Hoogspanningsmast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_gemaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Gemaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_stuw">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Stuw"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_strekdam">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Strekdam"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_gasput">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Gasput"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_waterleidingput">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Waterleidingput"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_trein">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Trein"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#functie_tram">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Tram"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_camera">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Camera"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_debietmeter">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Debietmeter"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_weerstation">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Weerstation"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_waterstandmeter">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Waterstandmeter"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#status">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/status"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Status">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/status"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bordes">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bordes"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_luifel">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Luifel"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_abri">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Abri"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bolder">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bolder"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_brievenbus">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Brievenbus"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_kunstobject">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kunstobject"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_slagboom">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Slagboom"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bank">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Bank"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_fontein">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Fontein"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_lichtpunt">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Lichtpunt"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_betaalautomaat">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Betaalautomaat"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_reclamezuil">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Reclamezuil"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_laagspanningsmast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Laagspanningsmast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_zendmast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Zendmast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_radarmast">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Radarmast"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_boom">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Boom"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_haag">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Haag"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_rivier">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Rivier"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_sloot">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Sloot"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_kanaal">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kanaal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_beek">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Beek"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_gracht">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Gracht"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_bron">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_waterloop">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Waterloop"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_watervlakte">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Watervlakte"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#type_zee">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Zee"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_informatiebord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Informatiebord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_plaatsnaambord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Plaatsnaambord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_straatnaambord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Straatnaambord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_verkeersbord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Verkeersbord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_scheepvaartbord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Scheepvaartbord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_reclamebord">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Reclamebord"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#typePlus_waarschuwingshek">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Waarschuwingshek"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Waterschap">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Waterschap"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Erf">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Erf"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Kruinlijn">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Kruinlijn"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#Terrein">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Terrein"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.buildingbits.nl/coins2/draft/IMGEO.rdf#wijk">
+	<related xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://ont.cbnl.org/cb/def/Wijk"/>
+</rdf:Description>
+
+</rdf:RDF>
