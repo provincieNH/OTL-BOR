@@ -11,4 +11,4 @@ Deelnemende organisaties aan dit project zijn:
 * Geonovum
 * BuildingBits
 
-De voorlopige Standalone ontologieen zijn gevisualiseerd op: http://connnecteddata.nl/otl-bor
+De voorlopige Standalone ontologieen zijn gevisualiseerd op: http://connecteddata.nl/otl-bor
