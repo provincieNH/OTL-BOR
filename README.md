@@ -10,3 +10,5 @@ Deelnemende organisaties aan dit project zijn:
 * CROW
 * Geonovum
 * BuildingBits
+
+De voorlopige Standalone ontologieen zijn gevisualiseerd op: http://connnecteddata.nl/otl-bor
